@@ -75,6 +75,8 @@ class Permintaan extends REST_Controller
             'tbl_barang_id' => $this->post('tbl_barang_id'),
             'tbl_instansi_id' => $this->post('tbl_instansi_id'),
             'datetrx' => $this->post('datetrx'),
+            'unitprice' => $this->post('unitprice'),
+            'amount' => $this->post('amount'),
             'status' => $this->post('status'),
             'qtyentered' => $this->post('qtyentered'),
             'keterangan' => $this->post('keterangan')
