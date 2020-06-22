@@ -79,7 +79,8 @@ class Permintaan extends REST_Controller
             'amount' => $this->post('amount'),
             'status' => $this->post('status'),
             'qtyentered' => $this->post('qtyentered'),
-            'keterangan' => $this->post('keterangan')
+            'keterangan' => $this->post('keterangan'),
+            'pathDownload' => $this->post('pathDownload')
         ];
 
         if ($this->permintaan->createPermintaan($data) > 0) {
@@ -106,7 +107,8 @@ class Permintaan extends REST_Controller
             'datetrx' => $this->post('datetrx'),
             'status' => $this->post('status'),
             'qtyentered' => $this->post('qtyentered'),
-            'keterangan' => $this->post('keterangan')
+            'keterangan' => $this->post('keterangan'),
+            'pathDownload' => $this->post('pathDownload')
         ];
         
         if ($this->permintaan->UpdatePermintaan($data, $id) > 0) {
